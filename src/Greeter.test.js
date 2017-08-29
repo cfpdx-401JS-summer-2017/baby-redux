@@ -8,6 +8,7 @@ import {
     resetForm 
     } from './greeterEditor.actions';
 import { SALUTATION, NAME, RESET } from './greeterEditor.constants';
+import reducer from './greeterEditor.reducer';
 
 
 describe('Greeter App', () => {
@@ -64,5 +65,28 @@ describe('Greeter App', () => {
         });
 
     });
+
+    describe('reducers', () => {
+
+        it('Has a default value of null', () => {
+            expect(reducer(undefined, { type: 'DUMMY' })).toEqual({ salutation: null, name: null});
+        });
+
+        it('updateSalutation', () => {
+            const action = updateSalutation('Bonjour');
+            expect(reducer({ salutation: null, name: null}, action)).toEqual({ salutation: 'Bonjour', name: null});
+        });
+
+        it('updateName', () => {
+            const action = updateName('Michele');
+            expect(reducer({salutation: null, name: null}, action)).toEqual({ salutation: null, name: 'Michele'});
+        });
+
+        it('resetForm', () => {
+            const action = resetForm();
+            expect(reducer({ salutation: 'Greetings', name: 'Human'}, action)).toEqual({ salutation: null, name: null });
+        });
+
+    })
 
 });
