@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Greeter App Greeter component displays a default greeting 1`] = `
+<div>
+  <span>
+    Hello
+  </span>
+  <span>
+    World
+    !
+  </span>
+</div>
+`;
+
+exports[`Greeter App Greeter component displays an updated greeting 1`] = `
+<div>
+  <span>
+    Howdy
+  </span>
+  <span>
+    pardner
+    !
+  </span>
+</div>
+`;
