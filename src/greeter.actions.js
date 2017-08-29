@@ -1,20 +1,21 @@
-//import { INCREMENT, DECREMENT } from './greeter.constants';
+import { UPDATE_SALUTATION, UPDATE_NAME, RESET } from './greeter.constants';
 
 export function updateSalutation(value) {
   return {
-    salutation: value
+    type: UPDATE_SALUTATION,
+    payload: value
   };
 }
   
 export function updateName(value) {
   return {
-    name: value
+    type: UPDATE_NAME, 
+    payload: value
   };
 }
 
 export function reset() {
   return {
-    salutation: '',
-    name: ''
+    type: RESET
   };
 }

@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Greeter resets salutation and name 1`] = `
+<div>
+  <span />
+  <span />
+  !
+  <form>
+    Salutation: 
+    <input
+      onChange={[Function]}
+    />
+    Name: 
+    <input
+      onChange={[Function]}
+    />
+    <button
+      onClick={[Function]}
+    >
+      Reset
+    </button>
+  </form>
+</div>
+`;
+
+exports[`Greeter updates salutation and name 1`] = `
+<div>
+  <span>
+    Hello
+  </span>
+  <span>
+    Biff
+  </span>
+  !
+  <form>
+    Salutation: 
+    <input
+      onChange={[Function]}
+    />
+    Name: 
+    <input
+      onChange={[Function]}
+    />
+    <button
+      onClick={[Function]}
+    >
+      Reset
+    </button>
+  </form>
+</div>
+`;
