@@ -1,6 +1,6 @@
 import { CHANGE, CLICK } from './greeter.constants';
 
-export default (state = {salutation:'hello', name:'tex'}, {type, payload}) => {
+export default (state = {salutation:'', name:''}, {type, payload}) => {
   switch (type) {
     case CHANGE:
       return state = payload;
