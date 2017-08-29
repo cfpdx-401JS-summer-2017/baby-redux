@@ -8,6 +8,7 @@ class App extends Component {
       <div className="App">
         <div className="App-header">
           <h2>Welcome to Greeter App</h2>
+          <p>Type in a greeting and name below, and watch it magically appear!</p>
         </div>
         <div className="Greeter">
           <Greeter />
