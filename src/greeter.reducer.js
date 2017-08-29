@@ -1,11 +1,11 @@
 import {UPDATESALUTATION, UPDATENAME, RESET} from './greeter.constants';
 
-export default (state = {salutation: '', name: ''}, {type, payload}) => {
+export default (state = {}, {type, payload}) => {
     switch (type) {
     case UPDATESALUTATION:
-        return {salutation: payload};
+        return {salutation: payload, name: state.name};
     case UPDATENAME:
-        return {name: payload};
+        return {salutation: state.salutation, name: payload};
     case RESET:
         return {salutation: '', name: ''};
     default:

@@ -5,14 +5,14 @@ import {updateSalutation, updateName, reset} from './greeter.actions';
 export function Greeter({salutation, name, dispatch}) {
     return (
         <div>
-            <span>{salutation}</span>
+            <span>{salutation}, </span>
             <span>{name}</span>!
             <p>Salutation: </p>
-            <input onChange={text => dispatch(updateSalutation(text))}></input>
+            <input onChange={({target}) => dispatch(updateSalutation(target.value))}></input>
             <p>Name: </p>
-            <input onChange={text => dispatch(updateName(text))}></input>
+            <input onChange={({target}) => dispatch(updateName(target.value))}></input>
             <br/>
-            <button onClick={() => reset()}>Reset</button>
+            <button onClick={() => dispatch(reset())}>Reset</button>
         </div>
     )
 }
