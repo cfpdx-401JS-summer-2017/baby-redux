@@ -1,0 +1,29 @@
+{
+  "name": "baby-redux",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Alchemy Code Lab image-gallery stuff to show of my react skills",
+  "dependencies": {
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-redux": "^5.0.6",
+    "react-scripts": "1.0.12",
+    "redux": "^3.7.2",
+    "save": "^2.3.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Thomson42/baby-redux.git"
+  },
+  "author": "Christopher Thomson",
+  "bugs": {
+    "url": "https://github.com/Thomson42/baby-redux/issues"
+  },
+  "homepage": "https://github.com/Thomson42/baby-redux#readme"
+}
