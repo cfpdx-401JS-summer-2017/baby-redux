@@ -1,12 +1,24 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { updateSalutation, updateName, reset } from './greeting.actions';
+import { updateSalutation, updateName, resetGreeting } from './greeting.actions';
 
-export function Greeting({ salutation, name }) {
+export function Editor({ salutation, name, reset, dispatch }) {
   return (
     <div>
-      <span>{salutation}</span>
-      <span>{name}</span>!
+      <div>
+        <span>{salutation}</span> <span>{name}</span>!
+      </div>
+      <label>
+        Salutation:
+        <input type="text" value={salutation} onChange={({target}) => dispatch(updateSalutation(target.value))} />
+      </label>
+      <br/>
+      <label>
+        Name:
+        <input type="text" value={name} onChange={({target}) => dispatch(updateName(target.value))} />
+      </label>
+      <br/>
+      <button onClick={() => dispatch(resetGreeting())} >Reset</button>
     </div>
   );
 }
@@ -14,24 +26,7 @@ export function Greeting({ salutation, name }) {
 export default connect(state => (
   {
     salutation: state.salutation,
-    name: state.name
+    name: state.name,
+    reset: state.reset,
   }
-))(Greeting);
-
-export function Editor({ dispatch }) {
-  return (
-    <div>
-      <label>
-        Salutation:
-        <input type="text" onChange={({target}) => dispatch(updateSalutation(target.value))} />
-      </label>
-      <br/>
-      <label>
-        Name:
-        <input type="text" onChange={({target}) => dispatch(updateName(target.value))} />
-      </label>
-      <br/>
-      <button onClick={() => reset()} >Reset</button>
-    </div>
-  );
-}
+))(Editor);

@@ -1,28 +1,22 @@
-import { SALUTATION, NAME } from './greeting.constants';
+import { UPDATE_SALUTATION, UPDATE_NAME, RESET } from './greeting.constants';
 
 export function updateSalutation(value) {
-  console.log('salutation was updated to', value);
   return {
-    type: SALUTATION,
+    type: UPDATE_SALUTATION,
     payload: value,
   };
 }
 
 export function updateName(value) {
-  console.log('name was updated to', value);
   return {
-    type: NAME,
+    type: UPDATE_NAME,
     payload: value,
   };
 }
 
-export function reset() {
-  console.log('reset');
+export function resetGreeting() {
   return {
-    type: SALUTATION,
-    payload: '',
-  },{
-    type: NAME,
-    payload: '',
+    type: RESET,
+    payload: null
   };
 }

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { Greeting, Editor } from './Greeting.js';
+import Editor from './Greeting.js';
 
 class App extends Component {
   render() {
@@ -12,7 +12,7 @@ class App extends Component {
           <h2>Baby Redux</h2>
         </div>
         <br/>
-        <Greeting />
+        {/* <Greeting /> */}
         <br/>
         <Editor />
       </div>
