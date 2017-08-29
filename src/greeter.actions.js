@@ -1,4 +1,4 @@
-import { SALUTATION, NAME } from './greeter.constants';
+import { SALUTATION, NAME, RESET } from './greeter.constants';
 
 export function changeName(name){
     return {
@@ -10,5 +10,12 @@ export function changeSalutation(salutation){
     return {
         type: SALUTATION,
         payload: salutation
+    }
+}
+
+export function resetAll(){
+    return {
+        type: RESET,
+        payload: null
     }
 }

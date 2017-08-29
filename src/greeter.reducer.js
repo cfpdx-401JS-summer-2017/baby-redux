@@ -1,11 +1,13 @@
-import { SALUTATION, NAME } from './greeter.constants';
+import { SALUTATION, NAME, RESET } from './greeter.constants';
 
-export default (state = { salutation: 'hey', name: 'joe'}, {type, payload}) => {
+export default (state = {}, {type, payload}) => {
     switch (type){
         case SALUTATION:
-            return { salutation: payload};
+            return { salutation: payload, name: state.name};
         case NAME:
-            return {name: payload};
+            return {salutation: state.salutation, name: payload};
+        case RESET:
+            return {salutation: '', name: ''};
         default:
             return state;
     }
