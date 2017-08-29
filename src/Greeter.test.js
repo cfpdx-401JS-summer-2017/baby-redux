@@ -6,12 +6,12 @@ import { Greeter } from './Greeter';
 describe('Greeter', () => {
 
   it('updates salutation and name', () => {
-    const wrapper = shallow(<Greeter salutation='Hello' name='Biff' />);
+    const wrapper = shallow(<Greeter salutation='Howdy' name='Pardner' />);
     expect(toJSON(wrapper)).toMatchSnapshot();
   });
 
   it('resets salutation and name', () => {
-    const wrapper = shallow(<Greeter salutation='' name='' />);
+    const wrapper = shallow(<Greeter salutation='Hello' name='Stranger' />);
     expect(toJSON(wrapper)).toMatchSnapshot();
   });
 

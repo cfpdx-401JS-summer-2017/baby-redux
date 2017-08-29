@@ -14,8 +14,12 @@
   color: white;
 }
 
-.App-intro {
-  font-size: large;
+#greeter {margin: 1em 0;}
+#greeting {
+  font-weight: bold;
+  color: #227;
+  font-size: 1.5em;
+  margin-bottom: 1em;
 }
 
 @keyframes App-logo-spin {

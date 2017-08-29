@@ -7,16 +7,16 @@ describe('greeter', () => {
   describe('actions', () => {
 
     it('updates salutation', () => {
-      expect(updateSalutation('Hello')).toEqual({ 
+      expect(updateSalutation('Howdy')).toEqual({ 
         type: UPDATE_SALUTATION,
-        payload: 'Hello'
+        payload: 'Howdy'
       });
     });
 
     it('updates name', () => {
-      expect(updateName('Biff')).toEqual({ 
+      expect(updateName('Pardner')).toEqual({ 
         type: UPDATE_NAME,
-        payload: 'Biff'
+        payload: 'Pardner'
       });
     });
 
@@ -35,13 +35,13 @@ describe('greeter', () => {
     });
 
     it('UPDATE_SALUTATION', () => {
-      const action = updateSalutation('Howdy');
-      expect(reducer({ salutation: '' }, action)).toEqual({ salutation: 'Howdy' });
+      const action = updateSalutation('Hi There');
+      expect(reducer({ salutation: '' }, action)).toEqual({ salutation: 'Hi There' });
     });
 
     it('UPDATE_NAME', () => {
-      const action = updateSalutation('Monty');
-      expect(reducer({ name: '' }, action)).toEqual({ name: 'Monty' });
+      const action = updateSalutation('Person');
+      expect(reducer({ name: '' }, action)).toEqual({ name: 'Person' });
     });
 
   });

@@ -2,16 +2,33 @@
 
 exports[`Greeter resets salutation and name 1`] = `
 <div>
-  <span />
-  <span />
+  <span>
+    Hello
+     
+  </span>
+  <span>
+    Stranger
+  </span>
   !
   <form>
-    Salutation: 
+    <label
+      for="salutation"
+    >
+      Salutation:
+    </label>
+     
     <input
+      id="salutation"
       onChange={[Function]}
     />
-    Name: 
+    <label
+      for="name"
+    >
+      Name:
+    </label>
+     
     <input
+      id="name"
       onChange={[Function]}
     />
     <button
@@ -26,19 +43,32 @@ exports[`Greeter resets salutation and name 1`] = `
 exports[`Greeter updates salutation and name 1`] = `
 <div>
   <span>
-    Hello
+    Howdy
+     
   </span>
   <span>
-    Biff
+    Pardner
   </span>
   !
   <form>
-    Salutation: 
+    <label
+      for="salutation"
+    >
+      Salutation:
+    </label>
+     
     <input
+      id="salutation"
       onChange={[Function]}
     />
-    Name: 
+    <label
+      for="name"
+    >
+      Name:
+    </label>
+     
     <input
+      id="name"
       onChange={[Function]}
     />
     <button
