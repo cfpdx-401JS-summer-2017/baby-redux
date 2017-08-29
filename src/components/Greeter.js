@@ -3,25 +3,25 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { Editor } from './Editor';
 
-export function Greeter({salutation, name, dispatch}) {
-  Greeter.propTypes = {
-    salutation: PropTypes.string,
-    name: PropTypes.string,
-    dispatch: PropTypes.func
-  }
+Greeter.propTypes = {
+  salutation: PropTypes.string,
+  name: PropTypes.string,
+  dispatch: PropTypes.func
+};
+
+export function Greeter({ salutation, name, dispatch }) {
   return (
     <div>
       <div className="greetText">
         <span>{salutation}</span>&nbsp;
         <span>{name}</span>!
       </div>
-      <Editor salutation={salutation} name={name} dispatch={dispatch}/>
+      <Editor salutation={salutation} name={name} dispatch={dispatch} />
     </div>
   );
 }
 
-export default connect(
-  state => ({
+export default connect(state => ({
   salutation: state.salutation,
   name: state.name
 }))(Greeter);

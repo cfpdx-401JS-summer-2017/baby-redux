@@ -1,15 +1,15 @@
-import { CHANGE, CLICK } from './greeter.constants';
+import { CHANGESALUTATION, CHANGENAME, CLICK } from './greeter.constants';
 
 export function updateSalutation(val) {
   return {
-    type: CHANGE,
+    type: CHANGESALUTATION,
     payload: val
   };
 }
 
 export function updateName(val) {
   return {
-    type: CHANGE,
+    type: CHANGENAME,
     payload: val
   };
 }

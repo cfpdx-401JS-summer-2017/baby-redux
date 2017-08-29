@@ -2,12 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { updateSalutation, updateName, resetForm } from '../greeter.actions';
 
-export default function Editor({ salutation, name, dispatch }) {
-  Editor.propTypes = {
-    salutation: PropTypes.string,
-    name: PropTypes.string,
-    dispatch: PropTypes.func
-  }
+Editor.propTypes = {
+  salutation: PropTypes.string,
+  name: PropTypes.string,
+  dispatch: PropTypes.func
+}
+
+export function Editor({ salutation, name, dispatch }) {
+
 
   return (
     <div className="greetForm">
@@ -29,3 +31,5 @@ export default function Editor({ salutation, name, dispatch }) {
     </div>
   );
 }
+
+export default Editor;

@@ -1,137 +1,49 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`greeter actions updates name 1`] = `
-<Editor
-  onChange={
-    Object {
-      "payload": Object {
-        "name": "sailor",
-        "salutation": "hello",
-      },
-      "type": "CHANGE",
-    }
-  }
+exports[`greeter reducers updates name 1`] = `
+<div
+  className="greetForm"
 >
-  <div
-    className="greetForm"
+  <input
+    onChange={[Function]}
+    placeholder="salutation"
+    type="text"
+    value="hello"
+  />
+  <input
+    onChange={[Function]}
+    placeholder="name"
+    type="text"
+    value="larry"
+  />
+  <button
+    onClick={[Function]}
   >
-    <input
-      onChange={[Function]}
-      placeholder="salutation"
-      type="text"
-    />
-    <input
-      onChange={[Function]}
-      placeholder="name"
-      type="text"
-    />
-    <button
-      onClick={[Function]}
-    >
-      reset form
-    </button>
-  </div>
-</Editor>
+    reset form
+  </button>
+</div>
 `;
 
-exports[`greeter actions updates name 2`] = `
-<Editor
-  onChange={
-    Object {
-      "payload": Object {
-        "name": "Larry",
-        "salutation": "hello",
-      },
-      "type": "CHANGE",
-    }
-  }
+exports[`greeter reducers updates salutation 1`] = `
+<div
+  className="greetForm"
 >
-  <div
-    className="greetForm"
+  <input
+    onChange={[Function]}
+    placeholder="salutation"
+    type="text"
+    value="hello"
+  />
+  <input
+    onChange={[Function]}
+    placeholder="name"
+    type="text"
+    value="world"
+  />
+  <button
+    onClick={[Function]}
   >
-    <input
-      onChange={[Function]}
-      placeholder="salutation"
-      type="text"
-    />
-    <input
-      onChange={[Function]}
-      placeholder="name"
-      type="text"
-    />
-    <button
-      onClick={[Function]}
-    >
-      reset form
-    </button>
-  </div>
-</Editor>
-`;
-
-exports[`greeter actions updates salutation 1`] = `
-<Editor
-  onChange={
-    Object {
-      "payload": Object {
-        "name": "world",
-        "salutation": "hello",
-      },
-      "type": "CHANGE",
-    }
-  }
->
-  <div
-    className="greetForm"
-  >
-    <input
-      onChange={[Function]}
-      placeholder="salutation"
-      type="text"
-    />
-    <input
-      onChange={[Function]}
-      placeholder="name"
-      type="text"
-    />
-    <button
-      onClick={[Function]}
-    >
-      reset form
-    </button>
-  </div>
-</Editor>
-`;
-
-exports[`greeter actions updates salutation 2`] = `
-<Editor
-  onChange={
-    Object {
-      "payload": Object {
-        "name": "stranger",
-        "salutation": "goodbye",
-      },
-      "type": "CHANGE",
-    }
-  }
->
-  <div
-    className="greetForm"
-  >
-    <input
-      onChange={[Function]}
-      placeholder="salutation"
-      type="text"
-    />
-    <input
-      onChange={[Function]}
-      placeholder="name"
-      type="text"
-    />
-    <button
-      onClick={[Function]}
-    >
-      reset form
-    </button>
-  </div>
-</Editor>
+    reset form
+  </button>
+</div>
 `;

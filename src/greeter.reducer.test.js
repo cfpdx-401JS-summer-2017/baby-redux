@@ -1,22 +1,23 @@
-import reducer from './greeter.reducer';
-import {CHANGE, CLICK} from './greeter.constants';
+import { CHANGENAME, CHANGESALUTATION, CLICK } from './greeter.constants';
 import { updateSalutation, updateName, resetForm } from './greeter.actions';
 
 describe('greeter', () => {
+  describe('actions', () => {
+    it('change has empty default values', () => {
+      expect(updateName(null)).toEqual({
+        type: CHANGENAME,
+        payload: null
+      });
+      expect(updateSalutation(null)).toEqual({
+        type: CHANGESALUTATION,
+        payload: null
+      });
+    });
 
-describe('reducers', () => {
-
-  it('change has empty default values', () => {
-    expect(updateName(null)).toEqual({
-      type: CHANGE,
-      payload: null
-    })
-
-  })
-
-})
-
-
-
-})
-
+    it('reset the form makes state empty', () => {
+      expect(resetForm()).toEqual({
+        type: CLICK
+      });
+    });
+  });
+});
