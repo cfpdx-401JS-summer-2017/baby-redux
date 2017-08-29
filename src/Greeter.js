@@ -11,7 +11,7 @@ export function Greeter({ name, salutation, dispatch }) {
       </div>
 
       <form>
-        <label for="salutation">Salutation:</label> <input id="salutation" onChange={event => dispatch(updateSalutation(event.target.value))} /> <label for="name">Name:</label> <input id="name" onChange={event => dispatch(updateName(event.target.value))} /> <button onClick={() => dispatch(reset())}>Reset</button>
+        <label for="salutation">Salutation:</label> <input id="salutation" onChange={event => dispatch(updateSalutation(event.target.value))} /> <label for="name">Name:</label> <input id="name" onChange={event => dispatch(updateName(event.target.value))} /> <button type="reset" onClick={() => dispatch(reset())}>Reset</button>
       </form>
     </div>
   );

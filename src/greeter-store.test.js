@@ -31,7 +31,7 @@ describe('greeter', () => {
   describe('reducers', () => {
 
     it('Has default value', () => {
-      expect(reducer(undefined, { type: 'DUMMY' })).toEqual({ salutation: '', name: '' });
+      expect(reducer(undefined, { type: 'DUMMY' })).toEqual({ salutation: 'Hello', name: 'stranger' });
     });
 
     it('UPDATE_SALUTATION', () => {
@@ -40,7 +40,7 @@ describe('greeter', () => {
     });
 
     it('UPDATE_NAME', () => {
-      const action = updateSalutation('Person');
+      const action = updateName('Person');
       expect(reducer({ name: '' }, action)).toEqual({ name: 'Person' });
     });
 
