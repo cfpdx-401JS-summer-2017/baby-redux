@@ -7,17 +7,17 @@ export function Greeting({ name, salutation, dispatch }) {
     return (
         <div>
             <div>
-                <span>{salutation}</span>
+                <span>{salutation} </span>
                 <span>{name}</span>!
             </div>
 
             <div>
-                <input name="name" value={name}
-                    onChange={({ target }) => dispatch(changeName(target.value))} />
-            </div>
-            <div>
                 <input name="salutation" value={salutation}
                     onChange={({ target }) => dispatch(changeSalutation(target.value))} />
+            </div>
+            <div>
+                <input name="name" value={name}
+                    onChange={({ target }) => dispatch(changeName(target.value))} />
             </div>
             <div>
                 <button onClick={() => dispatch(reset())}>Reset</button>
