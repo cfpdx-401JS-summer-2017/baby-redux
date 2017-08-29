@@ -69,22 +69,22 @@ describe('Greeter App', () => {
     describe('reducers', () => {
 
         it('Has a default value of null', () => {
-            expect(reducer(undefined, { type: 'DUMMY' })).toEqual({ salutation: null, name: null});
+            expect(reducer(undefined, { type: 'DUMMY' })).toEqual({ salutation: '', name: ''});
         });
 
         it('updateSalutation', () => {
             const action = updateSalutation('Bonjour');
-            expect(reducer({ salutation: null, name: null}, action)).toEqual({ salutation: 'Bonjour', name: null});
+            expect(reducer({ salutation: '', name: ''}, action)).toEqual({ salutation: 'Bonjour', name: ''});
         });
 
         it('updateName', () => {
             const action = updateName('Michele');
-            expect(reducer({salutation: null, name: null}, action)).toEqual({ salutation: null, name: 'Michele'});
+            expect(reducer({salutation: '', name: ''}, action)).toEqual({ salutation: '', name: 'Michele'});
         });
 
         it('resetForm', () => {
             const action = resetForm();
-            expect(reducer({ salutation: 'Greetings', name: 'Human'}, action)).toEqual({ salutation: null, name: null });
+            expect(reducer({ salutation: 'Greetings', name: 'Human'}, action)).toEqual({ salutation: '', name: '' });
         });
 
     })

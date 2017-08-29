@@ -3,10 +3,11 @@
 exports[`Greeter App Greeter component displays a default greeting 1`] = `
 <div>
   <span>
-    Hello
+    Greetings
   </span>
+  <br />
   <span>
-    World
+    Human
     !
   </span>
 </div>
@@ -17,6 +18,7 @@ exports[`Greeter App Greeter component displays an updated greeting 1`] = `
   <span>
     Howdy
   </span>
+  <br />
   <span>
     pardner
     !
