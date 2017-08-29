@@ -7,15 +7,16 @@ export function updateSalutation(salutation = '') {
     };
 }
 
-export function updateName(salutation) {
+export function updateName(name = '') {
     return {
         type: UPDATENAME,
-        payload: salutation
+        payload: name
     };
 }
 
 export function reset() {
     return {
-        type: RESET
+        type: RESET,
+        payload: null
     };
 }

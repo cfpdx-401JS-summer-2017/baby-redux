@@ -2,20 +2,17 @@ import React from 'react';
 import {connect} from 'react-redux';
 import {updateSalutation, updateName, reset} from './greeter.actions';
 
-export function Greeter({count, dispatch}) {
+export function Greeter({salutation, name, dispatch}) {
     return (
         <div>
-            <div>
-                {/* <span>{salutation}</span>
-                <span>{name}</span>! */}
-            </div>
-            <div>
-                <p>Salutation: </p>
-                <input onChange={() => dispatch(updateSalutation())}></input>
-                <p>Name: </p>
-                <input onChange={() => dispatch(updateName())}></input>
-                <button onClick={() => reset()}>Reset</button>
-            </div>
+            <span>{salutation}</span>
+            <span>{name}</span>!
+            <p>Salutation: </p>
+            <input onChange={text => dispatch(updateSalutation(text))}></input>
+            <p>Name: </p>
+            <input onChange={text => dispatch(updateName(text))}></input>
+            <br/>
+            <button onClick={() => reset()}>Reset</button>
         </div>
     )
 }
