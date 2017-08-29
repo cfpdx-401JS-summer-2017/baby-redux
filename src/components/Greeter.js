@@ -3,11 +3,10 @@ import { connect } from 'react-redux';
 import { Editor } from './Editor';
 
 export function Greeter({salutation, name, dispatch}) {
-  console.log(salutation, name);
   return (
     <div>
       <div>
-        <span>{salutation}</span>
+        <span>{salutation}</span>&nbsp;
         <span>{name}</span>!
       </div>
       <Editor salutation={salutation} name={name} dispatch={dispatch}/>

@@ -1,26 +1,24 @@
-import {CHANGE, CLICK} from './greeter.constants';
+import { CHANGE, CLICK } from './greeter.constants';
 
 export function updateSalutation(val) {
-  console.log('onChangeSal: ', val);
+  console.log('updateSalutation: ', val);
   return {
     type: CHANGE,
     payload: val
-  }
-
+  };
 }
 
 export function updateName(val) {
-  console.log('onChangeName: ', val);
+  console.log('updateName: ', val);
   return {
     type: CHANGE,
     payload: val
-  }
-
+  };
 }
 
 export function resetForm() {
-  console.log('submitNewGreeting: ');
+  console.log('resetForm: ');
   return {
     type: CLICK
-  }
+  };
 }
