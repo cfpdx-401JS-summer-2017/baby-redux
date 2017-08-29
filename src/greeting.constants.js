@@ -1,0 +1,3 @@
+
+export const CHANGENAME = 'CHANGENAME';
+export const CHANGESALUTATION = 'CHANGESALUTATION';
