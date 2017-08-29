@@ -1,13 +1,13 @@
 
 import React from 'react';
 import { connect } from 'react-redux';
-import { changeName, changeSalutation } from './greeting.actions';
+import { changeName, changeSalutation, reset } from '../greeting.actions';
 
 export function Greeting({ name, salutation, dispatch }) {
     return (
         <div>
             <div>
-                <span>{salutatino}</span>
+                <span>{salutation}</span>
                 <span>{name}</span>!
             </div>
 
@@ -20,8 +20,15 @@ export function Greeting({ name, salutation, dispatch }) {
                     onChange={({ target }) => dispatch(changeSalutation(target.value))} />
             </div>
             <div>
-                <button onClick={() => dispatch(reset({ name: '' }, { salutation: '' }))}>Reset</button>
+                <button onClick={() => dispatch(reset())}>Reset</button>
             </div>
         </div>
     )
 }
+
+export default connect(
+    state => ({
+        name: state.name,
+        salutation: state.salutation
+    })
+)(Greeting);
