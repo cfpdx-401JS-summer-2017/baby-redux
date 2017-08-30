@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Editor shows greeting with two inputs and a button 1`] = `
+<div>
+  <div>
+    <span>
+      Hallo
+    </span>
+     
+    <span>
+      Freund
+    </span>
+    !
+  </div>
+  <label>
+    Salutation:
+    <input
+      onChange={[Function]}
+      type="text"
+      value="Hallo"
+    />
+  </label>
+  <br />
+  <label>
+    Name:
+    <input
+      onChange={[Function]}
+      type="text"
+      value="Freund"
+    />
+  </label>
+  <br />
+  <button
+    onClick={[Function]}
+  >
+    Reset
+  </button>
+</div>
+`;
