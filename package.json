@@ -25,5 +25,11 @@
   "bugs": {
     "url": "https://github.com/Thomson42/baby-redux/issues"
   },
-  "homepage": "https://github.com/Thomson42/baby-redux#readme"
+  "homepage": "https://github.com/Thomson42/baby-redux#readme",
+  "devDependencies": {
+    "enzyme": "^2.9.1",
+    "enzyme-to-json": "^1.5.1",
+    "jest": "^20.1.0-alpha.3",
+    "react-test-renderer": "^15.6.1"
+  }
 }
