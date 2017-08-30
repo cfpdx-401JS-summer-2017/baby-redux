@@ -12,12 +12,12 @@ export function Greeting({ name, salutation, dispatch }) {
             </div>
 
             <div>
-                <input name="salutation" value={salutation}
-                    onChange={({ target }) => dispatch(changeSalutation(target.value))} />
+                <label> Salutation <input value={salutation} 
+                    onChange={({ target }) => dispatch(changeSalutation(target.value))} /></label>
             </div>
             <div>
-                <input name="name" value={name}
-                    onChange={({ target }) => dispatch(changeName(target.value))} />
+                <label> Name <input name="name" value={name}
+                    onChange={({ target }) => dispatch(changeName(target.value))} /></label>
             </div>
             <div>
                 <button onClick={() => dispatch(reset())}>Reset</button>

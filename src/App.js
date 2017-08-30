@@ -12,7 +12,7 @@ class App extends Component {
           <h2>Welcome to React</h2>
         </div>
         <div>
-        <Greeting/>
+        <Greeting />
       </div>
       </div>
     );
