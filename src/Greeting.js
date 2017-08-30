@@ -5,7 +5,7 @@ import { updateSalutation, updateName, resetGreeting } from './greeting.actions'
 export function Editor({ salutation, name, reset, dispatch }) {
   return (
     <div>
-      <div>
+      <div id="preview">
         <span>{salutation}</span> <span>{name}</span>!
       </div>
       <label>

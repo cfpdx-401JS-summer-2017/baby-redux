@@ -1,15 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Editor shows greeting with two inputs and a button 1`] = `
+exports[`<Editor /> component shows default greeting with two inputs and a button 1`] = `
 <div>
-  <div>
-    <span>
-      Hallo
-    </span>
+  <div
+    id="preview"
+  >
+    <span />
      
-    <span>
-      Freund
-    </span>
+    <span />
     !
   </div>
   <label>
@@ -17,7 +15,7 @@ exports[`Editor shows greeting with two inputs and a button 1`] = `
     <input
       onChange={[Function]}
       type="text"
-      value="Hallo"
+      value={null}
     />
   </label>
   <br />
@@ -26,7 +24,7 @@ exports[`Editor shows greeting with two inputs and a button 1`] = `
     <input
       onChange={[Function]}
       type="text"
-      value="Freund"
+      value={null}
     />
   </label>
   <br />
