@@ -15,7 +15,6 @@ exports[`<Editor /> component shows default greeting with two inputs and a butto
     <input
       onChange={[Function]}
       type="text"
-      value={null}
     />
   </label>
   <br />
@@ -24,7 +23,6 @@ exports[`<Editor /> component shows default greeting with two inputs and a butto
     <input
       onChange={[Function]}
       type="text"
-      value={null}
     />
   </label>
   <br />
