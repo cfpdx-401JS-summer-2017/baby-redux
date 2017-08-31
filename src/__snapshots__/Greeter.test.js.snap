@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Greeter displays all expected elements 1`] = `
+<div>
+  <span>
+    , 
+  </span>
+  <span />
+  !
+  <p>
+    Salutation: 
+  </p>
+  <input
+    onChange={[Function]}
+    value=""
+  />
+  <p>
+    Name: 
+  </p>
+  <input
+    onChange={[Function]}
+    value=""
+  />
+  <br />
+  <button
+    onClick={[Function]}
+  >
+    Reset
+  </button>
+</div>
+`;
