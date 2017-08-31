@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Counter shows a greeting and two inputs 1`] = `
+<div>
+  <section>
+    <span />
+    ,
+    <span />
+    !
+  </section>
+  <section>
+    <Connect(Receiver) />
+  </section>
+</div>
+`;
