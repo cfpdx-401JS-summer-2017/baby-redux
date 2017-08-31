@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`greeter reducers updates name 1`] = `
+<div
+  className="greetForm"
+>
+  <input
+    onChange={[Function]}
+    placeholder="salutation"
+    type="text"
+    value="hello"
+  />
+  <input
+    onChange={[Function]}
+    placeholder="name"
+    type="text"
+    value="larry"
+  />
+  <button
+    onClick={[Function]}
+  >
+    reset form
+  </button>
+</div>
+`;
+
+exports[`greeter reducers updates salutation 1`] = `
+<div
+  className="greetForm"
+>
+  <input
+    onChange={[Function]}
+    placeholder="salutation"
+    type="text"
+    value="hello"
+  />
+  <input
+    onChange={[Function]}
+    placeholder="name"
+    type="text"
+    value="world"
+  />
+  <button
+    onClick={[Function]}
+  >
+    reset form
+  </button>
+</div>
+`;
