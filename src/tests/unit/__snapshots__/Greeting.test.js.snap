@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Editor /> component shows default greeting with two inputs and a button 1`] = `
+<div>
+  <div
+    id="preview"
+  >
+    <span />
+     
+    <span />
+    !
+  </div>
+  <label>
+    Salutation:
+    <input
+      onChange={[Function]}
+      type="text"
+    />
+  </label>
+  <br />
+  <label>
+    Name:
+    <input
+      onChange={[Function]}
+      type="text"
+    />
+  </label>
+  <br />
+  <button
+    onClick={[Function]}
+  >
+    Reset
+  </button>
+</div>
+`;
