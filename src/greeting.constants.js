@@ -1,0 +1,4 @@
+
+export const CHANGENAME = 'CHANGENAME';
+export const CHANGESALUTATION = 'CHANGESALUTATION';
+export const RESET = 'RESET';

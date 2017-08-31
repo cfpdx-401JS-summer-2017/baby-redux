@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Greeting displays "Hello John!" in proper span tags 1`] = `
+<div>
+  <div>
+    <span>
+      Hello
+       
+    </span>
+    <span>
+      John
+    </span>
+    !
+  </div>
+  <div>
+    <label>
+       Salutation 
+      <input
+        onChange={[Function]}
+        value="Hello"
+      />
+    </label>
+  </div>
+  <div>
+    <label>
+       Name 
+      <input
+        name="name"
+        onChange={[Function]}
+        value="John"
+      />
+    </label>
+  </div>
+  <div>
+    <button
+      onClick={[Function]}
+    >
+      Reset
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Greeting displays empty input fields and reset button 1`] = `
+<div>
+  <div>
+    <span>
+       
+    </span>
+    <span />
+    !
+  </div>
+  <div>
+    <label>
+       Salutation 
+      <input
+        onChange={[Function]}
+      />
+    </label>
+  </div>
+  <div>
+    <label>
+       Name 
+      <input
+        name="name"
+        onChange={[Function]}
+      />
+    </label>
+  </div>
+  <div>
+    <button
+      onClick={[Function]}
+    >
+      Reset
+    </button>
+  </div>
+</div>
+`;
