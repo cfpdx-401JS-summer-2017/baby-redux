@@ -1,0 +1,142 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Greeter defaults to Hello stranger 1`] = `
+<div
+  id="greeter"
+>
+  <div
+    id="greeting"
+  >
+    <span>
+       
+    </span>
+    <span />
+    !
+  </div>
+  <form>
+    <label
+      for="salutation"
+    >
+      Salutation:
+    </label>
+     
+    <input
+      id="salutation"
+      onChange={[Function]}
+    />
+     
+    <label
+      for="name"
+    >
+      Name:
+    </label>
+     
+    <input
+      id="name"
+      onChange={[Function]}
+    />
+     
+    <button
+      onClick={[Function]}
+      type="reset"
+    >
+      Reset
+    </button>
+  </form>
+</div>
+`;
+
+exports[`Greeter updates name 1`] = `
+<div
+  id="greeter"
+>
+  <div
+    id="greeting"
+  >
+    <span>
+       
+    </span>
+    <span>
+      Pardner
+    </span>
+    !
+  </div>
+  <form>
+    <label
+      for="salutation"
+    >
+      Salutation:
+    </label>
+     
+    <input
+      id="salutation"
+      onChange={[Function]}
+    />
+     
+    <label
+      for="name"
+    >
+      Name:
+    </label>
+     
+    <input
+      id="name"
+      onChange={[Function]}
+    />
+     
+    <button
+      onClick={[Function]}
+      type="reset"
+    >
+      Reset
+    </button>
+  </form>
+</div>
+`;
+
+exports[`Greeter updates salutation 1`] = `
+<div
+  id="greeter"
+>
+  <div
+    id="greeting"
+  >
+    <span>
+      Howdy
+       
+    </span>
+    <span />
+    !
+  </div>
+  <form>
+    <label
+      for="salutation"
+    >
+      Salutation:
+    </label>
+     
+    <input
+      id="salutation"
+      onChange={[Function]}
+    />
+     
+    <label
+      for="name"
+    >
+      Name:
+    </label>
+     
+    <input
+      id="name"
+      onChange={[Function]}
+    />
+     
+    <button
+      onClick={[Function]}
+      type="reset"
+    >
+      Reset
+    </button>
+  </form>
+</div>
+`;
